@@ -4,14 +4,13 @@ import "yet-another-react-lightbox/styles.css";
 
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import Captions from "yet-another-react-lightbox/plugins/captions";
-
-// Importar estilos de plugins
-//import "yet-another-react-lightbox/plugins/zoom.css";
-//import "yet-another-react-lightbox/plugins/captions.css";
+import Video from "yet-another-react-lightbox/plugins/video";
 
 import tricaucoImg from '../activos/proyectos/tricauco-proyecto.jpeg';
 import dinicoImg from '../activos/proyectos/dinico-proyecto.png';
 import huallerehueImg from '../activos/proyectos/huallerehue-proyecto.JPG';
+
+ 
 
 import '../estilos/Galeria.css';
 
@@ -21,43 +20,50 @@ import '../estilos/Galeria.css';
 import tricaucoImg1 from '../activos/proyectos/tricauco-1.jpg';
 import tricaucoImg2 from '../activos/proyectos/tricauco-2.jpg';
 import tricaucoImg3 from '../activos/proyectos/tricauco-3.jpg';
-// Asume que tienes más fotos para Tricauco, o duplica si solo tienes 2
+
+import tricaucoVideo1 from '../activos/videos/tricauco-video-1.mp4';
+
 const tricaucoFotos = [
-  { src: tricaucoImg1, alt: "Aires de Tricauco - Vista 1" },
-  { src: tricaucoImg2, alt: "Aires de Tricauco - Vista 2" },
-  { src: tricaucoImg3, alt: "Aires de Tricauco - Vista 3" }, // Ejemplo de foto adicional
+  { src: tricaucoImg1 },
+  { src: tricaucoImg2 },
+  { src: tricaucoImg3 }, 
   
 ];
 const tricaucoVideos = [
-   { src: '../activos/videos/tricauco-video-1.mp4', type: 'video/mp4', alt: "Aires de Tricauco - Video Drone", poster: tricaucoImg },
+   { src: tricaucoVideo1, type: 'video/mp4', poster: tricaucoImg },
 ];
 
 // AIRES DE DIÑICO
 import dinicoImg1 from '../activos/proyectos/dinico-1.jpg';
 import dinicoImg2 from '../activos/proyectos/dinico-2.jpg';
 import dinicoImg3 from '../activos/proyectos/dinico-3.jpg';
+
+import dinicoVideo1 from '../activos/videos/dinico-video-1.mp4';
 const dinicoFotos = [
-  { src: dinicoImg1, alt: "Aires de Diñico - Vista 1" },
-  { src: dinicoImg2, alt: "Aires de Diñico - Vista 2" },
-  { src: dinicoImg3, alt: "Aires de Diñico - Vista 3" },
+  { src: dinicoImg1 },
+  { src: dinicoImg2 },
+  { src: dinicoImg3 },
   
 ];
 const dinicoVideos = [
-   { src: '../activos/videos/dinico-video-1.mp4', type: 'video/mp4', alt: "Aires de Diñico - Video Drone", poster: dinicoImg },
+   { src: dinicoVideo1, type: 'video/mp4', poster: dinicoImg },
 ];
 
 // AIRES DE HUALLEREHUE
 import huallerehueImg1 from '../activos/proyectos/huallerehue-1.jpg';
 import huallerehueImg2 from '../activos/proyectos/huallerehue-2.jpg';
 import huallerehueImg3 from '../activos/proyectos/huallerehue-3.jpg';
+
+import huallerehueVideo1 from '../activos/videos/huallerehue-video-1.mp4';
+
 const huallerehueFotos = [
-  { src: huallerehueImg1, alt: "Aires de Huallerehue - Vista 1" },
-  { src: huallerehueImg2, alt: "Aires de Huallerehue - Vista 2" },
-  { src: huallerehueImg3, alt: "Aires de Huallerehue - Vista 3" },
+  { src: huallerehueImg1 },
+  { src: huallerehueImg2 },
+  { src: huallerehueImg3 },
   
 ];
 const huallerehueVideos = [
-   { src: '../activos/videos/huallerehue-video-1.mp4', type: 'video/mp4', alt: "Aires de Huallerehue - Video Drone", poster: huallerehueImg },
+   { src: huallerehueVideo1, type: 'video/mp4', poster: huallerehueImg },
 ];
 
 // Datos organizados por proyecto para la galería
@@ -130,7 +136,7 @@ const Galeria = () => {
         index={index}
         close={() => setIndex(-1)}
         slides={currentSlides}
-        plugins={[Zoom, Captions]} // Activa los plugins si los instalaste
+        plugins={[Video, Zoom, Captions]} // Activa los plugins si los instalaste
       />
     </section>
   );

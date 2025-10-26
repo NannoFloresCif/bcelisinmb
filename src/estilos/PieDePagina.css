@@ -68,3 +68,30 @@
     align-items: center;
   }
 }
+
+.footer-contacto-directo li {
+  color: #aaa;
+  margin-bottom: 0.8rem;
+}
+
+.footer-contacto-directo a,
+.footer-contacto-directo span {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem; /* Espacio entre el icono y el texto */
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-contacto-directo a:hover {
+  color: var(--color-acento);
+}
+
+/* Ajuste para centrar en móvil */
+@media (max-width: 768px) {
+  .footer-contacto-directo a,
+  .footer-contacto-directo span {
+    justify-content: center; /* Centra los iconos y texto en móvil */
+  }
+}
