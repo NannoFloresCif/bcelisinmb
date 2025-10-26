@@ -87,7 +87,7 @@ const Galeria = () => {
           sources: [{ src: item.src, type: item.type }],
           title: proyectoNombre, 
           description: item.alt,
-          poster: item.poster // Añadimos poster al lightbox también
+          autoPlay: true // Añadimos poster al lightbox también
         };
       }
       return { 
@@ -137,6 +137,12 @@ const Galeria = () => {
         close={() => setIndex(-1)}
         slides={currentSlides}
         plugins={[Video, Zoom, Captions]} // Activa los plugins si los instalaste
+
+        Video={{
+          autoPlay: true,
+          controls: true,
+          playsInline: true // Asegura que los controles sigan visibles
+        }}
       />
     </section>
   );
