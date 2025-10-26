@@ -8,7 +8,7 @@ import Video from "yet-another-react-lightbox/plugins/video";
 
 import tricaucoImg from '../activos/proyectos/tricauco-proyecto.jpeg';
 import dinicoImg from '../activos/proyectos/dinico-proyecto.png';
-import huallerehueImg from '../activos/proyectos/huallerehue-proyecto.JPG';
+import huallerehueImg from '../activos/proyectos/h-p.jpg';
 
  
 
@@ -19,7 +19,7 @@ import '../estilos/Galeria.css';
 // AIRES DE TRICAUCO
 import tricaucoImg1 from '../activos/proyectos/tricauco-1.jpg';
 import tricaucoImg2 from '../activos/proyectos/tricauco-2.jpg';
-import tricaucoImg3 from '../activos/proyectos/tricauco-3.JPG';
+import tricaucoImg3 from '../activos/proyectos/tricauco3.jpg';
 
 import tricaucoVideo1 from '../activos/videos/tricauco-video-1.mp4';
 
@@ -34,8 +34,8 @@ const tricaucoVideos = [
 ];
 
 // AIRES DE DIÑICO
-import dinicoImg1 from '../activos/proyectos/dinico-1.jpg';
-import dinicoImg2 from '../activos/proyectos/dinico-2.jpg';
+import dinicoImg1 from '../activos/proyectos/d1.jpg';
+import dinicoImg2 from '../activos/proyectos/d2.jpg';
 import dinicoImg3 from '../activos/proyectos/dinico-3.jpg';
 
 import dinicoVideo1 from '../activos/videos/dinico-video-1.mp4';
@@ -51,8 +51,8 @@ const dinicoVideos = [
 
 // AIRES DE HUALLEREHUE
 import huallerehueImg1 from '../activos/proyectos/huallerehue-1.jpg';
-import huallerehueImg2 from '../activos/proyectos/huallerehue-2.jpg';
-import huallerehueImg3 from '../activos/proyectos/huallerehue-3.jpg';
+import huallerehueImg2 from '../activos/proyectos/h2.jpg';
+import huallerehueImg3 from '../activos/proyectos/h3.jpg';
 
 import huallerehueVideo1 from '../activos/videos/huallerehue-video-1.mp4';
 

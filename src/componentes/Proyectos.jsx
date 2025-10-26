@@ -4,7 +4,7 @@ import { FaCar, FaWater, FaDoorOpen, FaLayerGroup ,FaCloudSun , FaTree, FaRoad, 
 
 import tricaucoImg from '../activos/proyectos/tricauco-proyecto.jpeg';
 import dinicoImg from '../activos/proyectos/dinico-proyecto.png';
-import huallerehueImg from '../activos/proyectos/huallerehue-proyecto.JPG';
+import huallerehueImg from '../activos/proyectos/h-p.jpg';
 
 const datosProyectos = [
   {
