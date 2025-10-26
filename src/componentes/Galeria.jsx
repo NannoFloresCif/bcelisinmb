@@ -19,7 +19,7 @@ import '../estilos/Galeria.css';
 // AIRES DE TRICAUCO
 import tricaucoImg1 from '../activos/proyectos/tricauco-1.jpg';
 import tricaucoImg2 from '../activos/proyectos/tricauco-2.jpg';
-import tricaucoImg3 from '../activos/proyectos/tricauco-3.jpg';
+import tricaucoImg3 from '../activos/proyectos/tricauco-3.JPG';
 
 import tricaucoVideo1 from '../activos/videos/tricauco-video-1.mp4';
 
