@@ -1,0 +1,63 @@
+/* ==============================================
+   FUENTES Y VARIABLES GLOBALES
+   ============================================== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@700&display=swap');
+
+:root {
+  --color-primario: #1a1a1a; /* Negro Ónix */
+  --color-secundario: #f5f5f5; /* Blanco Ahumado */
+  --color-acento: #c5a47e; /* Oro Viejo/Bronce */
+  --fuente-titulos: 'Playfair Display', serif;
+  --fuente-cuerpo: 'Montserrat', sans-serif;
+}
+
+/* ==============================================
+   RESETEO Y ESTILOS BASE
+   ============================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--fuente-cuerpo);
+  background-color: var(--color-primario);
+  color: var(--color-secundario);
+  overflow-x: hidden;
+}
+
+/* ==============================================
+   ESTILOS GENERALES Y ANIMACIONES
+   ============================================== */
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Animación para aparición de elementos en scroll */
+.revelar {
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.revelar.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Estilo para los títulos de sección */
+.titulo-seccion {
+  font-family: var(--fuente-titulos);
+  font-size: 3rem;
+  color: var(--color-acento);
+  text-align: center;
+  margin-bottom: 2rem;
+}

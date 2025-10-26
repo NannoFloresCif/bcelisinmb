@@ -1,0 +1,34 @@
+.seccion-ubicacion {
+  padding: 6rem 0;
+  background-color: #111;
+}
+
+.mapas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.mapa-item h3 {
+  font-family: var(--fuente-titulos);
+  color: var(--color-acento);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.mapa-contenedor {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.mapa-contenedor iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

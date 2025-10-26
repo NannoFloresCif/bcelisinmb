@@ -1,0 +1,32 @@
+.seccion-introduccion {
+  background-color: #111;
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.intro-titulo {
+  font-family: var(--fuente-titulos);
+  font-size: 2.8rem;
+  color: var(--color-acento);
+  margin-bottom: 1.5rem;
+}
+
+.intro-texto {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--color-secundario);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .seccion-introduccion {
+    padding: 4rem 0;
+  }
+  .intro-titulo {
+    font-size: 2.2rem;
+  }
+  .intro-texto {
+    font-size: 1.1rem;
+  }
+}
