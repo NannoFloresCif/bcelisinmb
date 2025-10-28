@@ -85,15 +85,15 @@ const Galeria = () => {
         return { 
           type: 'video', 
           sources: [{ src: item.src, type: item.type }],
-          title: proyectoNombre, 
-          description: item.alt,
+          //title: proyectoNombre, 
+          //description: item.alt,
           autoPlay: true // Añadimos poster al lightbox también
         };
       }
       return { 
         src: item.src, 
-        title: proyectoNombre, 
-        description: item.alt 
+        //title: proyectoNombre, 
+        //description: item.alt 
       };
     });
     setCurrentSlides(slidesParaProyecto);
